@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  Thunderbird Mails zu Maildir konvertieren
+author: Richard Bäck
 ---
 
 Thunderbird verwendet intern standardmäßig das [MBOX](https://de.wikipedia.org/wiki/Mbox). Das ist sehr unangenehm, wenn man von Thunderbird zu Terminal Programmen (wie zB mutt oder Emacs) wechseln möchte und die Vorteile von [Maildir](https://de.wikipedia.org/wiki/Maildir) genießen möchte. Denn dafür müssen zuerst die einzelnen Mailverzeichnisse in Thunderbird - die intern als MBOX gehalten werden - zu Maildirs konvertiert werden.

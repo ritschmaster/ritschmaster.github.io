@@ -9,11 +9,21 @@ Das ist meine persönliche Seite!
 # whoami
 
 Ich bin:
-* Ein Entwickler in verschiedensten Sprachen
-* Qubes Benutzer
-* von Emacs zu vi erfolgreich migriert
+- ein Entwickler in verschiedensten Sprachen:
+  - ABAP
+  - Java
+  - C/C++
+  - Assembly
+  - Lisp
+  - Python, Ruby, Perl
+  - Bash
+  - SQL
+- lieber mit GTK als mit Qt am Oberflächen bauen (kann aber beides)
+- langjähriger Linux Benutzer und derzeitig mit Qubes zu frieden
+- immer drauf aus meinen Arbeitsablauf zu verbessern (zB durch i3 oder vi).
+- git affin
 
-# GPG Schlüssel
+# gpg --armor --export richard.baeck@mailbox.org
 
     -----BEGIN PGP PUBLIC KEY BLOCK-----
     mQENBFmHK4IBCACvFzQ2ViUH3CHH5CdGKD7awOzSCX5soUT5se1ntuxgP7eLAAnZ
