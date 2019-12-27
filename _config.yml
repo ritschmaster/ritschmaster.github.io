@@ -16,9 +16,9 @@
 title: man Richard-Baeck(3)
 email: richard.baeck@mailbox.org
 description: >- # this means to ignore newlines until "baseurl:"
-  The personal page of Richard Bäck.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://ritschmaster.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+  Die persönliche Seite von Richard Bäck.
+baseurl: ""
+url: "https://ritschmaster.github.io"
 twitter_username: richardbaeck
 github_username: ritschmaster
 

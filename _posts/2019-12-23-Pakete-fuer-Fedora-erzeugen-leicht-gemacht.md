@@ -12,7 +12,7 @@ Nun kann man mehrere Wege beschreiten:
 
 Die 1. Option ist natürlich angenehmer, da man alle Vornehmlichkeiten der Paketverwaltung weiter genießen kann. Aber was ist, wenn nur die 2. Option über bleibt? Was wenn man selber ein kleines Skript oder Skripte-Sammlung installieren möchte? Tarballs sind da nicht unbedingt die besten Helfer. Denn zur Löschung der zuvor installierten Dateien wird das Makefile der Installation benötigt um ein `make uninstall` absetzen zu können.
 
-Doch für genau solche Problemstellungen gibt es die Applikation [fpm](https://github.com/jordansissel/fpm). Mit der kann man für Debian, Fedora und weitere Distros aus Verzeichnissen (und andere Quellformate) sehr einfach erzeugen.
+Doch für genau solche Problemstellungen gibt es die Applikation [fpm](https://github.com/jordansissel/fpm). Mit der kann man für Debian, Fedora und weitere Distros aus Verzeichnissen (und andere Quellformate) sehr einfach Pakete erzeugen.
 
 # Installation
 
@@ -33,9 +33,9 @@ Das benötigte Kommando lautet:
 
     fpm -s dir -t rpm -n <Paketname> -v <Version> -d <AbhängigesPaket1> -d <AbhängigesPaket2> <Verzeichnis1> <Datei1> ...
 
-## Paket für Tarball erstellen
+## Paket aus Tarball erstellen
 
-Als Beispiel dient hier [GNU hello](https://ftp.gnu.org/gnu/hello/hello-2.10.tar.gz).
+Je nach Applikation könnte die Installation aus einem Tarball variieren. Wie die Installation genau stattfindet ist meistens ohnehin in der beigelegten README beschrieben. Als Beispiel dient hier [GNU hello](https://ftp.gnu.org/gnu/hello/hello-2.10.tar.gz). Das verwendet die [GNU autotools](https://de.wikipedia.org/wiki/GNU_Build_System), bei dem das Installationsprozedere standardisiert ist.
 
 Zuerst den Tarball entpacken und hinein wechseln:
 

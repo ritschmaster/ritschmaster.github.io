@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: Über
 permalink: /about/
 ---
 
@@ -22,6 +22,7 @@ Ich bin:
 - langjähriger Linux Benutzer und derzeitig mit Qubes zu frieden
 - immer drauf aus meinen Arbeitsablauf zu verbessern (zB durch i3 oder vi).
 - git affin
+- ein Quakeworld-Spieler
 
 # gpg --armor --export richard.baeck@mailbox.org
 
