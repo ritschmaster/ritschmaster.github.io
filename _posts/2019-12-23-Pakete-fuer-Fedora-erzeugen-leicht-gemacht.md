@@ -87,4 +87,5 @@ Wenn man sich nun mit `cd` in das Verzeichnis `~/helloworld` hinein begibt, erh�
 
 Das Paket wird im gleichen Verzeichnis erstellt und kann ohne weiteres verteilt und installiert werden.
 
-
+# Eintrags-Aktualisierungen:
+* In Fedora kann man auch die Option "deb" auswählen und somit Pakete für Debian erstellen

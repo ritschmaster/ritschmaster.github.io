@@ -1,0 +1,18 @@
+@startuml
+
+database "Heimverzeichnis" {
+	[mail]
+}
+
+[abook]
+[calcurse]
+[getmail]
+[msmtp]
+[mutt]
+
+[getmail] --> [mail] : "Platziert empfangene Mails in"
+[mutt] --> [msmtp] : Versendet Mails mit
+[mutt] --> [mail] : Betrachtet Mails von
+[mutt] --> [abook] : Findet Kontakte mit
+
+@enduml
