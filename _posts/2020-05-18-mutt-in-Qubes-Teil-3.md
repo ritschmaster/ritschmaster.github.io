@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  mutt in Qubes - Teil 3
+title:  mutt in Qubes - Teil 3 - abook
 author: Richard Bäck
 ---
 
-In Teil 2 habe ich gezeigt, wie einfach man in Qubes bestimmte Applikationen auf bestimmte Tastekürzel vorbelegen kann. In diesem Teil betrachten wir die Applikation [abook](https://abook.sourceforge.net/) genauer und wie wir sie für unsere Zwecke nutzen können.
+In Teil 2 habe ich gezeigt, wie einfach man in Qubes bestimmte Applikationen auf bestimmte Tastenkürzel vorbelegen kann. In diesem Teil betrachten wir die Applikation [abook](https://abook.sourceforge.net/) genauer und wie wir sie für unsere Zwecke nutzen können.
 
 # Was ist abook
 
@@ -93,6 +93,15 @@ Die Bedienung ist sehr einfach und an die Tastenkürzel des [vi](https://en.wiki
 * <kbd>w</kbd> - (Übersicht) die Kontaktliste speichern
 
 Für mehr Information einfach <kbd>?</kbd> in der Übersicht tippen.
+
+# Integration in xbindkeys
+
+Nun darf natürlich die Integration in xbindkeys bzw. eigentlich die Integration in die tägliche Arbeit nicht fehlen. Dafür wird in dom0 am besten ein Tastenkürzel für die Applikation gewählt. Bei mir ist das `Mod4` + `F7` und somit lautet mein Eintrag in der `~/.xbindkeysrc` in dom0:
+
+    "qvm-run email '/usr/bin/xterm -title "neomutt" -e neomutt'"
+      Mod4 + F7
+
+Wie die Integration in mutt selbst aussieht, werden wir in einem der nächsten Beiträge sehen.
 
 # Weiterführendes
 
