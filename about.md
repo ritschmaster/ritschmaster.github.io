@@ -8,7 +8,6 @@ Das ist meine persönliche Seite!
 
 # whoami
 
-Ich bin:
 - ein Entwickler in verschiedensten Sprachen:
   - ABAP
   - Java
@@ -18,11 +17,21 @@ Ich bin:
   - Python, Ruby, Perl
   - Bash
   - SQL
-- lieber mit GTK als mit Qt am Oberflächen bauen (kann aber beides)
-- langjähriger Linux Benutzer und derzeitig mit Qubes zu frieden
-- immer drauf aus meinen Arbeitsablauf zu verbessern (zB durch i3 oder vi).
+- ein Entwickler mit Erfahrungen zu den verschiedensten Bibliotheken
+  - GTK
+  - Qt
+  - OpenSSL
+  - libconfig
+  - Bison
+- langjähriger Linux Benutzer
+- derzeitig mit Qubes zu frieden
+- immer drauf aus meinen Arbeitsablauf zu verbessern mit
+  - i3
+  - vi
+  - mutt
 - git affin
-- ein Quakeworld-Spieler
+- ein OK Quakeworld-Spieler
+- ein schlechter Schach-Spieler
 
 # gpg --armor --export richard.baeck@mailbox.org
 
