@@ -16,6 +16,13 @@ Ein weiterer Vorteil von pass ist, dass seine Existenz es anbietet Passwörter v
 
 # Installation
 
+Einmal kurz die Whonix-WS-Vorlage starten und dort in einem Terminal das folgende eintippen:
+
+    sudo apt install -y pass
+    
+und schon ist pass installiert!
+
+
 # Die wichtigsten Befehle
 
 1. `pass insert <Pfad zum Passwort>` - Einfügen eines neues Passworts. Das Passwort wird explizit abgefragt.

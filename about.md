@@ -24,11 +24,15 @@ Das ist meine persönliche Seite!
   - libconfig
   - Bison
 - langjähriger Linux Benutzer
-- derzeitig mit Qubes zu frieden
+- derzeitig mit Qubes sehr zu frieden
 - immer drauf aus meinen Arbeitsablauf zu verbessern mit
   - i3
-  - vi
-  - mutt
+  - Emacs
+    - als IDE
+    - als E-Mail Klient
+    - als IRC Klient
+  - vi 
+    - Wenn Emacs nicht verfügbar ist
 - git affin
 - ein OK Quakeworld-Spieler
 - ein schlechter Schach-Spieler
