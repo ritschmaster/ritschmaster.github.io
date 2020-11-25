@@ -19,11 +19,11 @@ Damit du dich, lieber Leser, auch an Quake trauen kannst und nicht so wie ich al
 Der einfachste Klient ist eine bereits vorkonfigurierte Version von [ezQuake](https://www.ezquake.com/) durch die [Quakeworld Gemeinschaft](https://www.quakeworld.nu/): die nquake Distribution.
 
 1. Den Klienten von [nquake.com](https://www.nquake.com/) über den "Download"-Knopf für sein Betriebssystem herunterladen
- 1. Unter Linux wird nquake einfach im Heimverzeichnis installiert
+  1. Unter Linux wird nquake einfach im Heimverzeichnis installiert
 2. Installieren
- 1. Alle Modi installieren (TF, ...)
- 2. Keine HD Texturen installieren, die braucht sowieso niemand
- 3. Wenn man Quake nicht besitzt, dann ist das kein Problem. Die gratis Shareware-Version ist ausreichend für den Mehrspielermodus und wird automatisch heruntergeladen
+  1. Alle Modi installieren (TF, ...)
+  2. Keine HD Texturen installieren, die braucht sowieso niemand
+  3. Wenn man Quake nicht besitzt, dann ist das kein Problem. Die gratis Shareware-Version ist ausreichend für den Mehrspielermodus und wird automatisch heruntergeladen
  
 Mit dem Klienten nun installiert könnte man nun schon loslegen. Aber halt! Da kommt noch etwas mehr um bei der ersten Partie auch Frags zu ergattern!
 
@@ -48,34 +48,34 @@ Ich werde auf diese Punkte nun eingehen, allerdings nur auf die wichtigsten Punk
 
 Es gibt insgesamt 8 verschiedene Waffen:
 * Axe
- * Basisausrüstung beim Spawn
- * Nicht wichtig, dient nur zum Trollen
+  * Basisausrüstung beim Spawn
+  * Nicht wichtig, dient nur zum Trollen
 * Shotgun
- * Basisausrüstung beim Spawn
- * Gut um entfernte Gegner zu treffen
- * Hitscan = Keine verzögerung der Projektile. Nach dem Abdrücken schlagen die Projektile schon ein.
+  * Basisausrüstung beim Spawn
+  * Gut um entfernte Gegner zu treffen
+  * Hitscan = Keine verzögerung der Projektile. Nach dem Abdrücken schlagen die Projektile schon ein.
 * Super Shotgun
- * Wie Shotgun, bringt nur mehr Schrot pro Schuss raus
- * Gut um entfernte Gegner zu treffen
- * Hitscan
+  * Wie Shotgun, bringt nur mehr Schrot pro Schuss raus
+  * Gut um entfernte Gegner zu treffen
+  * Hitscan
 * Nailgun
- * Schießt langsame Projektile
- * Dient entweder zum Trollen oder als Ersatzwaffe für den Grenade Launcher
+  * Schießt langsame Projektile
+  * Dient entweder zum Trollen oder als Ersatzwaffe für den Grenade Launcher
 * Shuper Nailgun
- * Wie Nailgun, bringt nur mehr Nails in einem kleinerem Zeitintervall raus
+  * Wie Nailgun, bringt nur mehr Nails in einem kleinerem Zeitintervall raus
 * Grenade launcher
- * Verschießt Granaten, die nach der Zeit explodieren. Wenn ein Projektil eine Spielfigur direkt trifft, dann explodiert sie sofort
- * Die Granaten fliegen parabelförmig
- * Verursacht 100 Schaden
- * Dient zum Verwehren von Wegen (zB bei Ein- oder Ausgängen von Räumen)
- * Kann als Ersatz für [Rocket jumps](https://en.wikipedia.org/wiki/Rocket_jumping) verwendet werden
+  * Verschießt Granaten, die nach der Zeit explodieren. Wenn ein Projektil eine Spielfigur direkt trifft, dann explodiert sie sofort
+  * Die Granaten fliegen parabelförmig
+  * Verursacht 100 Schaden
+  * Dient zum Verwehren von Wegen (zB bei Ein- oder Ausgängen von Räumen)
+  * Kann als Ersatz für [Rocket jumps](https://en.wikipedia.org/wiki/Rocket_jumping) verwendet werden
 * Rocket Launcher
- * Verschießt Raketen. Wenn ein Projektil eine Spielfigur direkt trifft, dann explodiert sie sofort.
- * Das Projektil fliegt gerade und sehr schnell
- * Verursacht 100 Schaden
- * Erlaubt Rocket jumps
- * Erlaubt wie der Grenade Launcher das Verwehren von Wegen
- * Ist neben der Lightning Gun die wichtigste Waffe im Spiel
+  * Verschießt Raketen. Wenn ein Projektil eine Spielfigur direkt trifft, dann explodiert sie sofort.
+  * Das Projektil fliegt gerade und sehr schnell
+  * Verursacht 100 Schaden
+  * Erlaubt Rocket jumps
+  * Erlaubt wie der Grenade Launcher das Verwehren von Wegen
+  * Ist neben der Lightning Gun die wichtigste Waffe im Spiel
 * Lightning Gun
   * Hit scan
   * Verursacht 300 Schaden in der Sekunde
@@ -91,29 +91,29 @@ Noch wichtiger ist es zu wissen und zu verstehen, dass das Wechseln von Waffen k
 In Quakeworld haben sich einige Karten sehr lange gut gehalten. Vorteil: man kann sich auf eine engere Auswahl konzentrieren. Nachteil: andere haben sich bereits auf eine engere Auswahl konzentriert.
 
 * DM2 (Claustrophobolis)
- * Hat keine Lightning Gun
- * Hat 2 Red Armors und 2 Megahealths
- * Wird gerne für Duels, FFAs (Free for all - jeder gegen jeden) und Mannschaftsspiele verwendet
+  * Hat keine Lightning Gun
+  * Hat 2 Red Armors und 2 Megahealths
+  * Wird gerne für Duels, FFAs (Free for all - jeder gegen jeden) und Mannschaftsspiele verwendet
 * DM3 (The Abandoned Base)
- * Wird sehr gerne für Mannschaftsspiele verwendet
+  * Wird sehr gerne für Mannschaftsspiele verwendet
 * DM4 (The Bad Place)
- * Wird sehr gerne für Duels verwendet
+  * Wird sehr gerne für Duels verwendet
 * DM6 (Darkzone)
- * Wird sehr gerne für Duels verwendet
+  * Wird sehr gerne für Duels verwendet
 * E1M2
- * Wird sehr gerne für Mannschaftsspiele verwendet
+  * Wird sehr gerne für Mannschaftsspiele verwendet
 * ZTNDM3 (Bloodrun)
- * Wird sehr gerne für Duels und FFAs verwendet
+  * Wird sehr gerne für Duels und FFAs verwendet
 * BRAVADO
- * Wird sehr gerne für Duels und FFAs verwendet
+  * Wird sehr gerne für Duels und FFAs verwendet
 * SKULL
- * Wird sehr gerne für Duels verwendet
+  * Wird sehr gerne für Duels verwendet
 * SCHLOSS
- * Wird sehr gerne für Mannschaftsspiele verwendet
+  * Wird sehr gerne für Mannschaftsspiele verwendet
 * PUSHDMM4
- * Trainiert das Schießen mit dem Rocket Launcher auf Spielfiguren, die in der Luft fliegen
+  * Trainiert das Schießen mit dem Rocket Launcher auf Spielfiguren, die in der Luft fliegen
 * POVDMM4
- * Trainiert das Schießen mit der Lightning Gun
+  * Trainiert das Schießen mit der Lightning Gun
  
 Jede Karte kann mit dem Konsolen-Kommando `/MAP <Kartenname>` erreicht werden.
 
@@ -136,17 +136,17 @@ Der Rocket jump in Quake ist schwieriger als in Quake III und anderen Nachfolger
 In Quake ist das Rüstungssystem anders als in den Nachfolger Quakes. In Quake III zB absorbiert die Rüstung immer 66% des erhaltenen Schadens. In Quake ist der absorbierte Schaden progressiv. D.h. es kommt darauf an, welche Rüstung man hat. Außerdem können schwächere Rüstungen nur aufgenommen werden, wenn die Stärke unter einem Schwellenwert gesunken ist.
 
 * Red Armor
- * Bei Aufnahme sofort 200 Rüstungspunkte
- * Absorbiert 80% des erhaltenen Schadens
- * Yellow Armor kann erst aufgenommen werden, wenn < 113 Rüstungspunkte übrig sind
- * Green Armor kann erst aufgenommen werden, wenn < 38 Rüstungspunkte übrig sind
+  * Bei Aufnahme sofort 200 Rüstungspunkte
+  * Absorbiert 80% des erhaltenen Schadens
+  * Yellow Armor kann erst aufgenommen werden, wenn < 113 Rüstungspunkte übrig sind
+  * Green Armor kann erst aufgenommen werden, wenn < 38 Rüstungspunkte übrig sind
 * Yellow Armor
- * Bei Aufnahme sofort 150 Rüstungspunkte
- * Absorbiert 60% des erhaltenen Schadens
- * Green Armor kann erst aufgenommen werden, wenn < 50 Rüstungspunkte übrig sind
+  * Bei Aufnahme sofort 150 Rüstungspunkte
+  * Absorbiert 60% des erhaltenen Schadens
+  * Green Armor kann erst aufgenommen werden, wenn < 50 Rüstungspunkte übrig sind
 * Green Armor
- * Bei Aufnahme sofort 100 Rüstungspunkte
- * Absorbiert 30% des erhaltenen Schadens
+  * Bei Aufnahme sofort 100 Rüstungspunkte
+  * Absorbiert 30% des erhaltenen Schadens
  
 Wichtiger Hinweis: mit 100 Lebenspunkte und voller Green Armor überlebt man genau einen Volltreffer einer Rakete oder einer Granate.
 
@@ -155,9 +155,9 @@ Wichtiger Hinweis: mit 100 Lebenspunkte und voller Green Armor überlebt man gen
 Die Uhr ist das wichtigste Element auf dem gesamten Bildschirm. Mit ihr können Gegenstände gestoppt werden um sie beim nächsten Erscheinen vor dem Gegner zu erreichen.
 
 * Megahealth
- * Erscheint 20 Sekunden *nachdem* der Spieler, der es als letztes gehabt hat, <= 100 Lebenspunkte hat
+  * Erscheint 20 Sekunden *nachdem* der Spieler, der es als letztes gehabt hat, <= 100 Lebenspunkte hat
 * Red, Yellow, Green Armor
- * Erscheint 20 Sekunden *nachdem* ein Spieler den Gegenstand aufgenommen hat
+  * Erscheint 20 Sekunden *nachdem* ein Spieler den Gegenstand aufgenommen hat
 
 # Den Klienten richtig konfigurieren
 
@@ -207,17 +207,17 @@ In den meisten Servern werden zwei Befehle angeboten:
 Das wichtigste ist Training. Die nquake Distribution liefert bereits eine volle Konfiguration für das Training gegen Bots mit. Mit den folgenden Befehlen kann es losgehen:
 
 * `/bot_arena`
- * Startet ein Spiel im Arena Modus.
- * Das hilft auf PUSHDMM4 oder POVDMM4, aber auch auf Duel-Karten
+  * Startet ein Spiel im Arena Modus.
+  * Das hilft auf PUSHDMM4 oder POVDMM4, aber auch auf Duel-Karten
 * `/bot_1on1`
- * Datart ein Spiel im Duel Modus
- * Das hilft die verschiedenen Duel-Karten kennen zu lernen
+  * Datart ein Spiel im Duel Modus
+  * Das hilft die verschiedenen Duel-Karten kennen zu lernen
 * `/addbot`
- * Wenn im Spiel kann damit ein Bot hinzugefügt werden
+  * Wenn im Spiel kann damit ein Bot hinzugefügt werden
 * `/skillup` und `/skilldown`
- * Damit kann die Spielstärke der Bots reguliert werden
+  * Damit kann die Spielstärke der Bots reguliert werden
 * `/timelimit <Minuten>`
- * Damit kann die Rundenlänge reguliert werden 
+  * Damit kann die Rundenlänge reguliert werden 
  
 ## Spiele finden
 
@@ -228,7 +228,7 @@ Um eine Nachricht über den IRC Broadcast zu senden reicht `.QW <Nachricht>` in 
 ## Gemeinschaft finden
 
 * [IRC](https://hexchat.github.io/): #quakeworld im QuakeNet
- * Bin dort im übrigen auch regelmäßig
+  * Bin dort im übrigen auch regelmäßig
 * [Discord](https://discord.com/): https://discord.com/invite/0vmvMMyzOSMYrYbA
 
 # Los gehts!
