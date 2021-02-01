@@ -18,13 +18,15 @@ Und wie? In dem man sich das Schlüsselwort [__END__](https://idiosyncratic-ruby
 
 Das kann dann so in einem `hello.rb` aussehen:
 
-    #!/usr/bin/env 
+    #!/usr/bin/env ruby
     
     print "Hello world\n"
     
     __END__
     
     =pod
+    
+    =encoding utf8
     
     =head1 NAME
     
