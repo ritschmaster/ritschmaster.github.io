@@ -13,7 +13,7 @@ Das ist meine persönliche Seite!
   - Java
   - C/C++
   - Assembly
-  - Lisp
+  - Common Lisp, Emacs Lisp
   - Python, Ruby, Perl
   - Bash
   - SQL
@@ -22,7 +22,7 @@ Das ist meine persönliche Seite!
   - Qt
   - OpenSSL
   - libconfig
-  - Bison
+  - Bison, Flex
 - langjähriger Linux Benutzer
 - derzeitig mit Qubes sehr zu frieden
 - immer drauf aus meinen Arbeitsablauf zu verbessern mit
@@ -34,7 +34,7 @@ Das ist meine persönliche Seite!
   - vi 
     - Wenn Emacs nicht verfügbar ist
 - git affin
-- ein OK Quakeworld-Spieler
+- ein OK Doom-Speedrun Spieler
 - ein schlechter Schach-Spieler
 
 # gpg --armor --export richard.baeck@mailbox.org
