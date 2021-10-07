@@ -17,8 +17,8 @@ more difficult but nevertheless possible!
 To get everything up and running we will utilize [Msys2](https://www.msys2.org/)
 which is a wonderful application supplying
 [pacman](https://en.wikipedia.org/wiki/Arch_Linux#Pacman) for Windows. It also
-includes many GNU Utils, a full [MinGW](http://mingw.osdn.io/index.html)
-environment and plenty libraries for MinGW. Additionally we use the Emacs
+includes many GNU utils, a full [MinGW](http://mingw.osdn.io/index.html)
+environment and plenty of libraries for MinGW. Additionally we use the Emacs
 version it supplies.
 
 As we will build some stuff by ourselves and MinGW ships 32 Bit and 64 Bit
