@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  org-mode: Links zu Outlook Emails generieren
+title:  Links zu Outlook Emails generieren
 author: Richard Bäck
 ---
 
