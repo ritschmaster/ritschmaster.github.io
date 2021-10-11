@@ -22,21 +22,21 @@ Das Ziel ist sehr simpel: mit einem Knopf kann der Link zu einer E-Mail generier
 5. Neues Makro anlegen - den Namen der einfachheithalber gleich lassen
    ![Makro anlegen](/assets/links-zu-outlook-emails-generieren/2_makro_anlegen.png) 
 6. Unter bearbeiten den folgenden Quellcode einfügen:
-    Sub AddLinkToMessageInClipboard()
-        Dim objMail As Outlook.MailItem
-        'Dim doClipboard As New DataObject
-        Set doClipboard = CreateObject("New:{1C3B4210-F441-11CE-B9EA-00AA006B1A69}")
+
+        Sub AddLinkToMessageInClipboard()
+            Dim objMail As Outlook.MailItem
+            Set doClipboard = CreateObject("New:{1C3B4210-F441-11CE-B9EA-00AA006B1A69}")
+                
+            'One and ONLY one message must be selected
+            If Application.ActiveExplorer.Selection.Count <> 1 Then
+                MsgBox ("Select one and ONLY one message.")
+                Exit Sub
+            End If
             
-        'One and ONLY one message muse be selected
-        If Application.ActiveExplorer.Selection.Count <> 1 Then
-            MsgBox ("Select one and ONLY one message.")
-            Exit Sub
-        End If
-        
-        Set objMail = Application.ActiveExplorer.Selection.Item(1)
-        doClipboard.SetText "[[outlook:" + objMail.EntryID + "][MESSAGE: " + objMail.Subject + " (" + objMail.SenderName + ")]]"
-        doClipboard.PutInClipboard
-    End Sub
+            Set objMail = Application.ActiveExplorer.Selection.Item(1)
+            doClipboard.SetText "[[outlook:" + objMail.EntryID + "][MESSAGE: " + objMail.Subject + " (" + objMail.SenderName + ")]]"
+            doClipboard.PutInClipboard
+        End Sub
 7. Speichern
 8. Noch einmal in "Menüband anpassen" wechseln
 9. Unter _Start (E-Mail)_ eine neue Kategorie _org-mode_ anlegen. Darin kann dann aus der Befehlskategorie _Makros_ das oben erzeugte Makro platziert werden
