@@ -50,6 +50,7 @@ Tipp: mit <kbd>Alt-h</kbd> kann die gesamte Werkzeugleiste mit der Tastatur bedi
 
 1. Paket "org-outlook" installieren
 2. In `.emacs` die folgende Konfiguration hinterlegen:
+
     (require 'org-outlook)
    
     ; Pfad bitte entsprechend anpassen!

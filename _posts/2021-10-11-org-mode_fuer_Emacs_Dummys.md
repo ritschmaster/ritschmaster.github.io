@@ -123,8 +123,8 @@ Du kannst das Resultat sofort betrachten, in dem du die Agenda aktualisierst. We
 Du fragst dich vielleicht, wie du ein Datum eingeben kannst. Das ist sehr einfach. Es gibt zwei Möglichkeiten:
 1. Mit dem Kalendar, der aufgeht
 2. Mit der Tastatur
- 1. Mit +\<Zahl\> kannst du den Gegenstand um \<Zahl\> Tage in die Zukunft schieben
- 2. Mit -\<Zahl\> kannst du den Gegenstand um \<Zahl\> Tage in die Vergangenheit schieben
+   1. Mit +\<Zahl\> kannst du den Gegenstand um \<Zahl\> Tage in die Zukunft schieben
+   2. Mit -\<Zahl\> kannst du den Gegenstand um \<Zahl\> Tage in die Vergangenheit schieben
 
 Den Zeitpunkt musst du immer mit der Tastatur im 24-Stunden Format angeben. Beispiel:
 * 0:00
