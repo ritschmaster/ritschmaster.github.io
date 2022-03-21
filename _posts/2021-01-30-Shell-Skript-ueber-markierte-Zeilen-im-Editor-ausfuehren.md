@@ -47,3 +47,16 @@ Doch das tut immer noch weh! Inbesondere so viele Sonderzeichen einzutippen! Des
 Damit muss ich nun nur mehr <kbd>C-u</kbd> <kbd>M-x</kbd> und dem Befehl `MY/TO-ABAP-ASSIGN-LITERAL-ON-REGION` über die markierten Zeilen ausführen.
 
 Dieser kleine Hack kann aber sicherlich auch in anderen Editoren auch umgesetzt werden. Emacs ist mir nur am nächsten.
+
+# Anmerkung 2022-03-31
+
+Da ich inzwischen Ruby doch in allen meinen Verwendungen mit Perl ersetzt habe, möchte ich diesem Eintrag die Version mit Perl nicht vorenthalten. Die sieht folgendermaßen aus:
+
+    (defun my/to-abap-assign-literal-on-region ()
+        (interactive)
+        (shell-command-on-region (region-beginning)
+                                 (region-end)
+                                 "perl -lne 'print \"-\", $_, \" = '\\'\\''.\"'"
+                                 (current-buffer)
+                                 t))
+                                 
