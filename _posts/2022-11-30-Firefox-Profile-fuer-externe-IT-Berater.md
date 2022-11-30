@@ -1,3 +1,9 @@
+---
+layout: post
+title:  Firefox Profile für externe IT Berater
+author: Richard Bäck
+---
+
 Externe IT-Berater haben ein sehr interessantes Leben. Zumindest meiner Meinung nach. Man kann viele verschiedene Branchen, Unternehmen und deren Produkte entdecken und mithelfen großartige Produkte noch weiter zu verbesseren. Meist lebt man von Herausforderung zu Herausforderung. Das ist zwar anstrengend, dennoch immer sehr spannend.
 
 Zwischen all diesen wechselnden Kulissen bleibt allerdings eine Konstante: der Zugang zu dem Kundensystem ist immer verschieden. Doch das schlimmste ist meiner Erfahrung nach, wenn sich Kunden die Technologie des Microsoft-Kontos teilen. Warum: verschiedene Konten werden gespeichert und manchmal bleibt man angemeldet und manchmal nicht. Oder man muss sich zuerst exta abmelden, damit man sich dann mit den anderen Konto wieder anmelden kann. Das ist sehr mühselig.
