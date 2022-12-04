@@ -15,24 +15,24 @@ Die ist einfach: für jeden Kunden ein Firefox-Profil anlegen. Gestartet wird da
 Doch wie bekommt man das hin? Unter Windows 10 ist das sehr einfach. In den folgenden Schritten beschreibe ich, wie ich für den Kunden _Kunde1_ ein Profil anlege:
 
 1. Der Speicherort der _Firefox.exe_ muss gefunden werden. Diese kann über eine einfache Windows-Suche mittels <kbd>Win</kbd> und der Eingabe _Firefox_ gefunden werden. Mit _Datei Speicherort öffnen_ geht das Verzeichnis der Verknüpfung im Startmenü auf.<br>
-![Schritt 1: Speicherort finden](2022-11-30-Firefox-Profile-fuer-externe-IT-Berater/Schritt_01.png)
+![Schritt 1: Speicherort finden](/assets/2022-11-30-Firefox-Profile-fuer-externe-IT-Berater/Schritt_01.png)
 2. Mittels <kbd>Alt</kbd>+<kbd>Enter</kbd> können die Eigenschaften der Verknüpfung betrachtet werden. Aus diesen kann der Pfad der _Firefox.exe_ entnommen werden. Diesen mittels <kbd>Strg</kbd>+<kbd>C</kbd> in die Zwischenablage kopieren.<br>
-![Schritt 2: Pfad kopieren](2022-11-30-Firefox-Profile-fuer-externe-IT-Berater/Schritt_02.png)
+![Schritt 2: Pfad kopieren](/assets/2022-11-30-Firefox-Profile-fuer-externe-IT-Berater/Schritt_02.png)
 3. Nun einen _cmd_ Kommandoprompt mit der Windows-Suche öffnen.<br>
-![Schritt 3: _cmd_ öffnen](2022-11-30-Firefox-Profile-fuer-externe-IT-Berater/Schritt_03.png)
+![Schritt 3: _cmd_ öffnen](/assets/2022-11-30-Firefox-Profile-fuer-externe-IT-Berater/Schritt_03.png)
 4. In den Kommandoprompt mit <kbd>Strg</kbd>+<kbd>V</kbd> den Pfad zur _Firefox.exe_ einfügen und mittels den Parameter `--ProfileManager` den Profil-Verwalter starten.<br>
-![Schritt 4: Firefox Profil-Verwalter öffnen](2022-11-30-Firefox-Profile-fuer-externe-IT-Berater/Schritt_04.png)
+![Schritt 4: Firefox Profil-Verwalter öffnen](/assets/2022-11-30-Firefox-Profile-fuer-externe-IT-Berater/Schritt_04.png)
 5. Im geöffnten Firefox Profil-Verwalter ist nun das Standard-Profil vorausgewählt. Falls sich die Markierung ändert, diese wieder zurückändern. Mit Profil erstellen führt ein Wizard durch die Profilanlage. Dort beim Profilnamen _Kunde1_ eingeben. Mit der alten Belegung _Firefox starten_, damit jedenfalls das bestehende Standard-Profil als Vorbelegung erhalten bleibt.<br>
-![Schritt 5: Profil anlegen](2022-11-30-Firefox-Profile-fuer-externe-IT-Berater/Schritt_05.png)
+![Schritt 5: Profil anlegen](/assets/2022-11-30-Firefox-Profile-fuer-externe-IT-Berater/Schritt_05.png)
 6. Das generierte Profil wird in _%APPDATA%\Mozilla\Firefox\Profiles_ abgelegt. Allerdings ist es wichtig hier zu wissen, dass der ursprüngliche Name aus Schritt 5 nur als Suffix nach einer generierten Zeichenkette verwendet wird. Deshalb am besten zu diesem Pfad mit dem Windows Explorer wechseln, damit der konkrete Profilname herausgefunden werden kann.<br><br>
 Im noch vorher geöffneten Kommandoprompt kann nun mit dem Pfad aus 2. und dem Parameter `--profile %APPDATA%\Mozilla\Firefox\Profiles\XXX.Kunde1` das neu angelegte Profil getestet werden. Es muss ein neues Firefox Fenster aufgehen, in dem keine Einstellung oder Lesezeichen des Standardprofils vorhanden ist, da es ja ein neues Profil ist.<br>
-![Schritt 6: Neues Profil test](2022-11-30-Firefox-Profile-fuer-externe-IT-Berater/Schritt_06.png)
+![Schritt 6: Neues Profil test](/assets/2022-11-30-Firefox-Profile-fuer-externe-IT-Berater/Schritt_06.png)
 7. Nun die Verknüpfung aus 1. kopieren und auf dem Desktop platzieren. Der Name kann natürlich beliebig gewählt werden. Ich hab _Firefox @ Kunde1_ gewählt.<br>
-![Schritt 7: Verknüpfung für neues Profil anlegen](2022-11-30-Firefox-Profile-fuer-externe-IT-Berater/Schritt_07.png)
+![Schritt 7: Verknüpfung für neues Profil anlegen](/assets/2022-11-30-Firefox-Profile-fuer-externe-IT-Berater/Schritt_07.png)
 8. Natürlich muss die neue Verknüpfung dahingehend angepasst werden, dass diese auch den neuen Parameter `--profile %APPDATA%\Mozilla\Firefox\Profiles\XXX.Kunde1` verwendet. Dies kann im Reiter _Verknüpfung_ erledigt werden.<br>
-![Schritt 8: Verknüpfung anpassen](2022-11-30-Firefox-Profile-fuer-externe-IT-Berater/Schritt_08.png)
+![Schritt 8: Verknüpfung anpassen](/assets/2022-11-30-Firefox-Profile-fuer-externe-IT-Berater/Schritt_08.png)
 9. **Bonus:** Mit mehreren Firefox-Instanzen kann man den Überblick verlieren, welche Instanz was beinhaltet. Ich persönlich verwende dazu die Lesezeichen-Leiste. Aber die Instanz selbst kann das auch über _Hilfe_ > _Weitere Informationen zur Fehlerbehebung_ > _Profilordner_ preisgeben.<br>
-![Schritt 9.1: Profil herausfinden 1](2022-11-30-Firefox-Profile-fuer-externe-IT-Berater/Schritt_09.01.png)<br>
-![Schritt 9.2: Profil herausfinden 2](2022-11-30-Firefox-Profile-fuer-externe-IT-Berater/Schritt_09.02.png)
+![Schritt 9.1: Profil herausfinden 1](/assets/2022-11-30-Firefox-Profile-fuer-externe-IT-Berater/Schritt_09.01.png)<br>
+![Schritt 9.2: Profil herausfinden 2](/assets/2022-11-30-Firefox-Profile-fuer-externe-IT-Berater/Schritt_09.02.png)
 
 Ich hoffe, dass ich dir, lieber Leser, damit eine Idee geben konnte, wie du deine Konten besser organisieren kannst. Die Idee der Firefox-Profile ist natürlich auch in anderen Szenarien anwendbar!
