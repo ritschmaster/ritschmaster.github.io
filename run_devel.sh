@@ -1,3 +1,3 @@
 #!/bin/bash
 
-bundle exec jekyll serve
+GEM_HOME=vendor/ bundle exec jekyll serve

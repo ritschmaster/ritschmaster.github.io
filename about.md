@@ -1,48 +1,40 @@
 ---
 layout: page
-title: Über
+title: about
 permalink: /about/
 ---
 
-Das ist meine persönliche Seite!
+This is my personal website!
 
 # whoami
 
-- ein Entwickler in verschiedensten Sprachen:
+- a developer in a diverse set of languages:
   - ABAP
-  - [BRO](https://brobots.info) Regeln
+  - [BRO](https://brobots.info) rules 
   - Java
   - C/C++
   - Assembly
-  - Common Lisp, Emacs Lisp
+  - Lisp
   - Python, Ruby, Perl
   - Bash
   - SQL
   - C#
   - VBA
-- ein Entwickler mit Erfahrungen zu den verschiedensten Bibliotheken
+- a developer experienced in a diverse set of libraries:
   - GTK
   - Qt
   - OpenSSL
   - libconfig
-  - Bison, Flex
-- ein SAP Berater mit Erfahrungen in den verschiedensten Modulen
+  - Bison/Flex
+- a SAP consultant exerienced in a diverse set of modules:
   - MM
   - SD
   - FI
-- langjähriger Linux Benutzer
-- derzeitig mit Qubes sehr zu frieden
-- immer drauf aus meinen Arbeitsablauf zu verbessern mit
-  - Hauptsächlich KDE um den Kulturschock beim Wechsel zwischen Linux und Windows zu vermeiden. Aber ich habe auch eine funktionierende (und früher aktiv verwendete) i3 Konfiguration. 
-  - Emacs
-    - als IDE
-    - als Musikverwalter
-    - während Entwicklungen meistens als Dateiverwalter
-  - vi 
-    - Wenn Emacs nicht verfügbar ist
-- git affin
-- ein OK Doom-Speedrun Spieler
-- ein schlechter Schach-Spieler
+- a long term Linux user
+- Doom Emacs > vi > Emacs
+- into git
+- an OK Doom speedrunner
+- a bad chess player
 
 # gpg --armor --export richard.baeck@mailbox.org
 
