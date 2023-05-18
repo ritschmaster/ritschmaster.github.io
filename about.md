@@ -8,6 +8,8 @@ This is my personal website!
 
 # whoami
 
+- creator of [snailcrypt](https://webap.snailcrypt.com)
+- creator of [b3](https://github.com/ritschmaster/b3)
 - a developer in a diverse set of languages:
   - ABAP
   - [BRO](https://brobots.info) rules 

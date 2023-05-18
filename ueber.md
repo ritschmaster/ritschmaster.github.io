@@ -8,6 +8,8 @@ Das ist meine persönliche Seite!
 
 # whoami
 
+- Schöpfer von [snailcrypt](https://webap.snailcrypt.com)
+- Schöpfer von [b3](https://github.com/ritschmaster/b3)
 - ein Entwickler in verschiedensten Sprachen:
   - ABAP
   - [BRO](https://brobots.info) Regeln
