@@ -16,7 +16,7 @@ Well, as other people in the Internet have put it already: the Apple Magic Mouse
 
 Weaponized with the knowledge of a bunch of reviews on Youtube I decided to go for it and was... quite disappointed. At first I thought that the built-in Trackpad of the MacBook was way more intuitive and usable then the mouse. This made somewhat sense as I am a very keyboard centric user. Using the Trackpad is way more natural for me as it is more easily reachable then a separate mouse. This impression is especially reinforced by the default Apple has set to have no right click at all. Keep the right click in mind. We will get back to it later.
 
-But: as those Youtube reviews have already prophesied it is very vital to keep it using for some time. And also to make some base changes - like enabling some gestures and also right clicking. [[Here]{.underline}](https://www.youtube.com/watch?v=0pDTqDI0_Hk) is a great introduction video on how to hold the mouse and also some basic setups. Still it did not work out quite so well for me.
+But: as those Youtube reviews have already prophesied it is very vital to keep it using for some time. And also to make some base changes - like enabling some gestures and also right clicking. [Here](https://www.youtube.com/watch?v=0pDTqDI0_Hk) is a great introduction video on how to hold the mouse and also some basic setups. Still it did not work out quite so well for me.
 
 ## The issue
 
