@@ -1,4 +1,4 @@
---
+---
 
 layout: post
 
@@ -6,7 +6,7 @@ title: A way to use the Apple Magic Mouse
 
 author: Richard Bäck
 
----
+----
 
 I have been using a MacBook M2 for about 4 months now and I am quite impressed on how good it handles heavy CPU loads. Even the base line model is sufficient to perform development tasks involving running Docker, Eclipse, Safari, (Apple) Mail and a lot of other stuff in parallel.
 
