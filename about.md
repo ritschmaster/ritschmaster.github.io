@@ -50,9 +50,10 @@ This is my personal website!
        3. Most familiar with Red Hat/Fedora and Qubes
    2. Currently looking into FreeBSD
    3. Running macOS as a daily driver for 1 year now
-7. into old games
-  1. an OK Doom speedrunner
-  2. a bad QuakeWorld player 
+7. vi(m) user
+8. into old games
+    1. an OK Doom speedrunner
+    2. a bad QuakeWorld player 
 
 # gpg --armor --export richard.baeck@mailbox.org
 
