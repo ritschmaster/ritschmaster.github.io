@@ -8,35 +8,51 @@ This is my personal website!
 
 # whoami
 
-- creator of [snailcrypt](https://webapp.snailcrypt.com)
-- creator of [b3](https://github.com/ritschmaster/b3)
-- a developer in a diverse set of languages:
-  - ABAP
-  - [BRO](https://brobots.info) rules 
-  - Java
-  - C/C++
-  - Assembly
-  - Lisp
-  - Python, Ruby, Perl
-  - Bash
-  - SQL
-  - C#
-  - VBA
-- a developer experienced in a diverse set of libraries:
-  - GTK
-  - Qt
-  - OpenSSL
-  - libconfig
-  - Bison/Flex
-- a SAP consultant exerienced in a diverse set of modules:
-  - MM
-  - SD
-  - FI
-- a long term Linux user
-- Doom Emacs > vi > Emacs
-- into git
-- an OK Doom speedrunner
-- a bad chess player
+1. creator of [snailcrypt](https://webapp.snailcrypt.com)
+2. creator of [b3](https://github.com/ritschmaster/b3)
+3. a developer in a diverse set of languages:
+    1. Main:
+        1. ABAP
+        2. [BRO](https://brobots.info) rules 
+        3. [JavaScript](https://github.com/ritschmaster/snailcrypt-jsclient)
+        4. [Rust](https://crates.io/crates/snailcrypt)
+        4. [C](https://github.com/ritschmaster/b3)
+        3. SQL
+        5. Java
+        6. Python
+        7. [Bash](https://github.com/ritschmaster/aadiv)
+        8. [Perl](https://github.com/ritschmaster/abapmonk)
+    2. Also:
+        1. C++
+        2. C#
+        3. Assembly
+        4. Ruby
+        5. VBA 
+        6. [Lisp](https://github.com/ritschmaster/caveman2-widgets)
+        7. VBA
+4. a developer experienced in a diverse set of libraries:
+    1. Main:
+        1. [OpenUI5](https://github.com/ritschmaster/snailcrypt-jsclient)
+        2. GTK
+        3. [OpenSSL](https://crates.io/crates/snailcrypt)
+        4. [Bison/Flex](https://github.com/ritschmaster/b3)
+    2. Also:
+        1. Qt
+        2. libconfig
+5. a SAP consultant exerienced in a diverse set of modules:
+    1. MM
+    2. SD
+    3. FI
+6. into UNIX-like systems
+   1. A long term Linux user
+       1. +15 years experience
+       2. Linux was my daily driver for about 8 years
+       3. Most familiar with Red Hat/Fedora and Qubes
+   2. Currently looking into FreeBSD
+   3. Running macOS as a daily driver for 1 year now
+7. into old games
+  1. an OK Doom speedrunner
+  2. a bad QuakeWorld player 
 
 # gpg --armor --export richard.baeck@mailbox.org
 
