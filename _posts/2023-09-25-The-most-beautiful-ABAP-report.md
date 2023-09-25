@@ -77,7 +77,7 @@ The sub sections of this section are for each include necessary in the final rep
 
 ### The report
 
-1. See file [ZBR_MAKT_UPDATE.abap](https://raw.githubusercontent.com/ritschmaster/ritschmaster.github.io/master/assets/2023-09-30-The-most-beautiful-ABAP-Report/implementation/ZBR_MAKT_UPDATE.abap)
+1. See file [ZBR_MAKT_UPDATE.abap](https://raw.githubusercontent.com/ritschmaster/zbr_makt_update/main/src/ZBR_MAKT_UPDATE.abap)
 2. The description of the file is *ZBR: Update material descriptions*
 
 The purpose of the report itself is mainly only to hold all the necessary includes. The only really important thing happening in here is the call to the *main* subroutine:
@@ -91,14 +91,14 @@ As it is vital to avoid using global data the range table holding the user selec
 
 ### The global top include
 
-1. See file [ZBR_MAKT_UPDATE_T01.abap](https://raw.githubusercontent.com/ritschmaster/ritschmaster.github.io/master/assets/2023-09-30-The-most-beautiful-ABAP-Report/implementation/ZBR_MAKT_UPDATE_T01.abap)
+1. See file [ZBR_MAKT_UPDATE_T01.abap](https://raw.githubusercontent.com/ritschmaster/zbr_makt_update/main/src/ZBR_MAKT_UPDATE_T01.abap)
 2. The description of the file is *ZBR_MAKT_UPDATE: Top-include of entire report*
 
 The global top include actually does not store anything in this example report as there is nothing to be shared globally across the business functionality and the Dynpros. If you are relying on general constants for your business logic then you might place them in here.
 
 ### The selection include
 
-1. See file [ZBR_MAKT_UPDATE_T02.abap](https://raw.githubusercontent.com/ritschmaster/ritschmaster.github.io/master/assets/2023-09-30-The-most-beautiful-ABAP-Report/implementation/ZBR_MAKT_UPDATE_T02.abap)
+1. See file [ZBR_MAKT_UPDATE_T02.abap](https://raw.githubusercontent.com/ritschmaster/zbr_makt_update/main/src/ZBR_MAKT_UPDATE_T02.abap)
 2. The description of the file is *ZBR_MAKT_UPDATE: Top-include of selection screen*
 
 Since we only need an input field for a range of material numbers this include is again very small. The important contents are:
@@ -113,7 +113,7 @@ Since we only need an input field for a range of material numbers this include i
 
 ## The global subroutine include
 
-1. See file [ZBR_MAKT_UPDATE_F01.abap](https://raw.githubusercontent.com/ritschmaster/ritschmaster.github.io/master/assets/2023-09-30-The-most-beautiful-ABAP-Report/implementation/ZBR_MAKT_UPDATE_F01.abap)
+1. See file [ZBR_MAKT_UPDATE_F01.abap](https://raw.githubusercontent.com/ritschmaster/zbr_makt_update/main/src/ZBR_MAKT_UPDATE_F01.abap)
 2. The description of the file is *ZBR_MAKT_UPDATE: General subroutines of the report*
 
 In here we have only the *main* subroutine and other subroutines that are general business logic or subroutines generally necessary. Let's have a brief look at each subroutine's parameters starting with the *main* subroutine:
@@ -198,14 +198,14 @@ The goal is to manage a table of the table type *ZBR_MAKT_UPDATE_T_DATA* with th
 
 ## The top-include for the Dynpro 0100
 
-1. See file [ZBR_MAKT_UPDATE_T03.abap](https://raw.githubusercontent.com/ritschmaster/ritschmaster.github.io/master/assets/2023-09-30-The-most-beautiful-ABAP-Report/implementation/ZBR_MAKT_UPDATE_T03.abap)
+1. See file [ZBR_MAKT_UPDATE_T03.abap](https://raw.githubusercontent.com/ritschmaster/zbr_makt_update/main/src/ZBR_MAKT_UPDATE_T03.abap)
 2. The description of the file is *ZBR_MAKT_UPDATE: Top-include of Dynpro 0100*
 
 In here any global data needed to run the Dynpro 0100 is defined. This includes constants holding the function return codes.
 
 ## The PBO include for the Dynpro 0100
 
-1. See file [ZBR_MAKT_UPDATE_O01.abap](https://raw.githubusercontent.com/ritschmaster/ritschmaster.github.io/master/assets/2023-09-30-The-most-beautiful-ABAP-Report/implementation/ZBR_MAKT_UPDATE_O01.abap)
+1. See file [ZBR_MAKT_UPDATE_O01.abap](https://raw.githubusercontent.com/ritschmaster/zbr_makt_update/main/src/ZBR_MAKT_UPDATE_O01.abap)
 2. The description of the file is *ZBR_MAKT_UPDATE: PBO of Dynpro 0100*
 
 The PBO include holds only the modules actually used by the Dynpro. This makes the modules very small thus we can have a look at the entire include here:
@@ -227,7 +227,7 @@ As you can see we do not have any variable definitions or logic within the modul
 
 ## The PAI include for the Dynpro 0100
 
-1. See file [ZBR_MAKT_UPDATE_I01.abap](https://raw.githubusercontent.com/ritschmaster/ritschmaster.github.io/master/assets/2023-09-30-The-most-beautiful-ABAP-Report/implementation/ZBR_MAKT_UPDATE_I01.abap)
+1. See file [ZBR_MAKT_UPDATE_I01.abap](https://raw.githubusercontent.com/ritschmaster/zbr_makt_update/main/src/ZBR_MAKT_UPDATE_I01.abap)
 2. The description of the file is *ZBR_MAKT_UPDATE: PAI of Dynpro 0100*
 
 As expected the modules in here are again only to act as glue code between the Dynpro and the actual ABAP subroutine. Therefore we can have a look at essentially the entire include here too:
@@ -242,7 +242,7 @@ As expected the modules in here are again only to act as glue code between the D
 
 ## The subroutine include for the Dynpro 0100
 
-1. See file [ZBR_MAKT_UPDATE_F02.abap](https://raw.githubusercontent.com/ritschmaster/ritschmaster.github.io/master/assets/2023-09-30-The-most-beautiful-ABAP-Report/implementation/ZBR_MAKT_UPDATE_F02.abap)
+1. See file [ZBR_MAKT_UPDATE_F02.abap](https://raw.githubusercontent.com/ritschmaster/zbr_makt_update/main/src/ZBR_MAKT_UPDATE_F02.abap)
 2. The description of the file is *ZBR_MAKT_UPDATE: Subroutines of Dynpro 0100*
 
 In here are all subroutines used by the modules and all utility subroutines for those subroutines. But business logic is completely banned from here to keep a clear separation between the includes. We start looking at the subroutine *call_screen_0100*:
@@ -371,14 +371,14 @@ The issue at hand is now that the class *CL_GUI_ALV_GRID* does not now the data 
 
 ## The top-include for the Dynpro 0101
 
-1. See file [ZBR_MAKT_UPDATE_T04.abap](https://raw.githubusercontent.com/ritschmaster/ritschmaster.github.io/master/assets/2023-09-30-The-most-beautiful-ABAP-Report/implementation/ZBR_MAKT_UPDATE_T04.abap)
+1. See file [ZBR_MAKT_UPDATE_T04.abap](https://raw.githubusercontent.com/ritschmaster/zbr_makt_update/main/src/ZBR_MAKT_UPDATE_T04.abap)
 2. The description of the file is *ZBR_MAKT_UPDATE: Top-include of Dynpro 0101*
 
 The same principles as in the section [The top-include for the Dynpro 0100](#the-top-include-for-the-dynpro-0100) are applied to this include.
 
 ## The class include for the Dynpro 0101
 
-1. See file [ZBR_MAKT_UPDATE_C01.abap](https://raw.githubusercontent.com/ritschmaster/ritschmaster.github.io/master/assets/2023-09-30-The-most-beautiful-ABAP-Report/implementation/ZBR_MAKT_UPDATE_C01.abap)
+1. See file [ZBR_MAKT_UPDATE_C01.abap](https://raw.githubusercontent.com/ritschmaster/zbr_makt_update/main/src/ZBR_MAKT_UPDATE_C01.abap)
 2. The description of the file is *ZBR_MAKT_UPDATE: Local classes for Dynpro 0101*
 
 As mentioned in section [The Dynpro 0101](#the-dynpro-0101) an event receiver is needed to handle the click on the "Display more information" icon. The implementation of the event receiver is done within this include.
@@ -448,21 +448,21 @@ Overpopulation of the where-used list of the actual data of the ALV: The actual 
 
 ## The PBO include for the Dynpro 0101
 
-1. See file [ZBR_MAKT_UPDATE_O02.abap](https://raw.githubusercontent.com/ritschmaster/ritschmaster.github.io/master/assets/2023-09-30-The-most-beautiful-ABAP-Report/implementation/ZBR_MAKT_UPDATE_O02.abap)
+1. See file [ZBR_MAKT_UPDATE_O02.abap](https://raw.githubusercontent.com/ritschmaster/zbr_makt_update/main/src/ZBR_MAKT_UPDATE_O02.abap)
 2. The description of the file is *ZBR_MAKT_UPDATE: PBO of Dynpro 0101*
 
 The PBO modules here are looking very similar to the ones already seen in [The PBO include for the Dynpro 0100](#the-pbo-include-for-the-dynpro-0100). I will skip any explanation of it.
 
 ## The PAI include for the Dynpro 0101
 
-1. See file [ZBR_MAKT_UPDATE_I02.abap](https://raw.githubusercontent.com/ritschmaster/ritschmaster.github.io/master/assets/2023-09-30-The-most-beautiful-ABAP-Report/implementation/ZBR_MAKT_UPDATE_I02.abap)
+1. See file [ZBR_MAKT_UPDATE_I02.abap](https://raw.githubusercontent.com/ritschmaster/zbr_makt_update/main/src/ZBR_MAKT_UPDATE_I02.abap)
 2. The description of the file is *ZBR_MAKT_UPDATE: PAI of Dynpro 0101*
 
 The PAI modules here are looking very similar to the ones already seen in [The PAI include for the Dynpro 0100](#the-pai-include-for-the-dynpro-0100). I will skip any explanation of it.
 
 ## The subroutine include for the Dynpro 0101
 
-1. See file [ZBR_MAKT_UPDATE_F03.abap](https://raw.githubusercontent.com/ritschmaster/ritschmaster.github.io/master/assets/2023-09-30-The-most-beautiful-ABAP-Report/implementation/ZBR_MAKT_UPDATE_F03.abap)
+1. See file [ZBR_MAKT_UPDATE_F03.abap](https://raw.githubusercontent.com/ritschmaster/zbr_makt_update/main/src/ZBR_MAKT_UPDATE_F03.abap)
 2. The description of the file is *ZBR_MAKT_UPDATE: Subroutines of Dynpro 0101*
 
 The subroutines are mostly looking similar to the ones already seen in [The subroutine include for the Dynpro 0100](#the-subroutine-include-for-the-dynpro-0100).The most interesting parts are:
