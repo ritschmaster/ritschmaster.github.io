@@ -203,6 +203,70 @@ The goal is to manage a table of the table type *ZBR_MAKT_UPDATE_T_DATA* with th
 
 In here any global data needed to run the Dynpro 0100 is defined. This includes constants holding the function return codes.
 
+## The class include for the Dynpro 0100
+
+1. See file [ZBR_MAKT_UPDATE_C01.abap](https://raw.githubusercontent.com/ritschmaster/zbr_makt_update/main/src/ZBR_MAKT_UPDATE_C01.abap)
+2. The description of the file is *ZBR_MAKT_UPDATE: Local classes for Dynpro 0100*
+
+The class *CL_GUI_ALV_GRID* has a severe caveat concerning read-only columns and the copy/paste functionality. If the entire ALV is editable, then copying and pasting lines is __always__ allowed via the system keyboard shortcuts for copy/paste. This is critical if the ALV should prohibit the creation of new lines. The cause of this criticality: the ALV allows copying lines and pasting them at the end. The normal behavior of automatically appending the pasted lines is triggered thus creating lines.
+
+To prohibit this functionality the user of *CL_GUI_ALV_GRID* must listen for the *DATA_CHANGED_FINISHED* to remove the new lines. Additionally the object of the class *CL_GUI_ALV_GRID* must trigger its *DATA_CHANGED_FINISHED* event for data changes. Normally it only triggers that event if the user triggers a function return code within the Dynpro or a button in the ALV toolbar.
+
+The necessary switch to listen for actual data changes can be seen in the *subroutine 0100_init* within the [subroutine include for the Dynpro 0100](#the-subroutine-include-for-the-dynpro-0100). Here is the entire implementation of the *DATA_CHANGED_FINISHED* handler in the class for the Dynpro 0100:
+    
+    CLASS zcl_0100_alv_event_receiver DEFINITION.
+      PUBLIC SECTION.
+        METHODS:
+          constructor
+            IMPORTING
+              it_0100_alv_data_ref TYPE REF TO zbr_makt_update_t_data_alv,
+    
+          get_0100_alv_data_ref
+            RETURNING
+              VALUE(robj_0100_alv_data_ref) TYPE REF TO zbr_makt_update_t_data_alv,
+    
+          get_length_orig
+            RETURNING
+              VALUE(r_length_orig) TYPE int4,
+    
+          data_changed_finished
+            FOR EVENT data_changed_finished OF cl_gui_alv_grid
+            IMPORTING
+              e_modified
+              et_good_cells.
+    
+      PRIVATE SECTION.
+        DATA:
+          t_0100_alv_data_ref TYPE REF TO zbr_makt_update_t_data_alv,
+          length_orig         TYPE int4.
+    ENDCLASS.
+    
+    CLASS zcl_0100_alv_event_receiver IMPLEMENTATION.
+      METHOD constructor.
+        t_0100_alv_data_ref = it_0100_alv_data_ref.
+        length_orig = lines( t_0100_alv_data_ref->* ).
+      ENDMETHOD.
+    
+      METHOD get_0100_alv_data_ref.
+        robj_0100_alv_data_ref = t_0100_alv_data_ref.
+      ENDMETHOD.
+    
+      METHOD get_length_orig.
+        r_length_orig = length_orig.
+      ENDMETHOD.
+
+      METHOD data_changed_finished.
+        DATA(lf_length_orig) = get_length_orig( ).
+        DATA(lt_0100_alv_data_ref) = get_0100_alv_data_ref( ).
+    
+        PERFORM 0100_handle_data_changed_fin USING    e_modified
+                                                      lf_length_orig
+                                             CHANGING lt_0100_alv_data_ref.
+      ENDMETHOD.
+    ENDCLASS.
+
+The implementation of *0100_handle_data_changed_fin* can again be found in the [subroutine include for the Dynpro 0100](#the-subroutine-include-for-the-dynpro-0100).
+
 ## The PBO include for the Dynpro 0100
 
 1. See file [ZBR_MAKT_UPDATE_O01.abap](https://raw.githubusercontent.com/ritschmaster/zbr_makt_update/main/src/ZBR_MAKT_UPDATE_O01.abap)
@@ -295,6 +359,21 @@ Next up are the subroutines that are used by the modules:
                             cobj_cc_alv TYPE REF TO cl_gui_custom_container
                             cobj_alv TYPE REF TO cl_gui_alv_grid
                             ct_data_alv TYPE zbr_makt_update_t_data_alv.
+
+      * ...
+
+      "============================================================================
+      " Change the ALV handlers to react on change. By default they only react
+      " if the user triggers a function. A reaction on changing is needed to catch
+      " inserted rows if the user presses the paste keyboard shortcut (e.g.
+      " Ctrl+V).
+      
+      " We can safely risk a dump
+      cobj_alv->register_edit_event( cl_gui_alv_grid=>mc_evt_modified ).
+
+      * ...
+
+    ENDFORM.
     
     * ...
     
@@ -378,7 +457,7 @@ The same principles as in the section [The top-include for the Dynpro 0100](#the
 
 ## The class include for the Dynpro 0101
 
-1. See file [ZBR_MAKT_UPDATE_C01.abap](https://raw.githubusercontent.com/ritschmaster/zbr_makt_update/main/src/ZBR_MAKT_UPDATE_C01.abap)
+1. See file [ZBR_MAKT_UPDATE_C02.abap](https://raw.githubusercontent.com/ritschmaster/zbr_makt_update/main/src/ZBR_MAKT_UPDATE_C02.abap)
 2. The description of the file is *ZBR_MAKT_UPDATE: Local classes for Dynpro 0101*
 
 As mentioned in section [The Dynpro 0101](#the-dynpro-0101) an event receiver is needed to handle the click on the "Display more information" icon. The implementation of the event receiver is done within this include.
